@@ -6,13 +6,14 @@ import {MdButtonModule} from '@angular/material';
 import {MdIconModule} from '@angular/material';
 import {MdToolbarModule} from '@angular/material';
 import {MdTooltipModule} from '@angular/material';
+import {MdSidenavModule} from '@angular/material';
 
 @NgModule({
 
 imports: [MdCardModule, MdGridListModule, MdButtonModule,
-    MdIconModule, MdToolbarModule, MdTooltipModule],
+    MdIconModule, MdToolbarModule, MdTooltipModule, MdSidenavModule],
 exports: [MdCardModule, MdGridListModule, MdButtonModule,
-    MdIconModule, MdToolbarModule, MdTooltipModule]
+    MdIconModule, MdToolbarModule, MdTooltipModule, MdSidenavModule]
 
 })
 

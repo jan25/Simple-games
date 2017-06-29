@@ -3,12 +3,12 @@ import { Component, Input } from '@angular/core';
 import { GameTile } from './game-tile.class';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'tic-tac-toe',
+  templateUrl: './tic-tac-toe.component.html',
+  styleUrls: ['./tic-tac-toe.component.css']
 })
 
-export class AppComponent {
+export class TicTacToeComponent {
 
   gameOverMsgs: string[];
   gameOverMsg: string;
@@ -19,7 +19,7 @@ export class AppComponent {
 
   winner: number;
 
-  imgPathPrefix = '../assets/img/';
+  imgPathPrefix = '../../assets/img/';
   checkImg = this.imgPathPrefix + 'check.png';
   crossImg = this.imgPathPrefix + 'cross.png';
 
@@ -123,10 +123,10 @@ export class AppComponent {
     }
   }
 
-  showMsg() {
-
-  }
-
+  /**
+   * Fix this for better game play
+   * TODO
+   */
   randomMove() {
     for (var tile of this.tiles) {
       if (!tile.used) {

@@ -7,13 +7,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {CustomImportsModule} from './custom-imports.module';
 
-import { AppComponent } from './app.component';
-
+import { TicTacToeComponent } from './tic-tac-toe/tic-tac-toe.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    TicTacToeComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +22,6 @@ import { AppComponent } from './app.component';
     CustomImportsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [TicTacToeComponent]
 })
 export class AppModule { }
