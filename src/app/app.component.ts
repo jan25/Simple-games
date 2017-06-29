@@ -81,13 +81,13 @@ export class AppComponent {
 
       switch(i) {
         case 0:
-          diag2Count += this.tiles[0].mark;
+          diag2Count += this.tiles[2].mark;
           break;
         case 1:
           diag2Count += this.tiles[4].mark;
           break;
         case 2:
-          diag2Count += this.tiles[8].mark;
+          diag2Count += this.tiles[6].mark;
           break;
       }
     }
@@ -113,12 +113,10 @@ export class AppComponent {
     if (this.gameOver) return;
 
     if (count === 3) {
-      console.log('You win!!');
       this.gameOver = true;
       this.winner = 1;
       this.gameOverMsg = this.gameOverMsgs[0];
     } else if (count === -3) {
-      console.log('You lose :(');
       this.gameOver = true;
       this.winner = -1;
       this.gameOverMsg = this.gameOverMsgs[1];
