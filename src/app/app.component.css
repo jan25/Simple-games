@@ -1,0 +1,14 @@
+
+.play-area {
+    width: 300px;
+}
+
+.grid-container {
+    margin: 0 auto;
+    width: 240px;
+    height: 240px;
+}
+
+.msg-toolbar-spacer {
+    flex: 1 1 auto;
+}
