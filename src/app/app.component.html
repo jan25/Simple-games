@@ -1,0 +1,20 @@
+
+<div class="play-area">
+  <div class="grid-container">
+    <md-grid-list cols="3">
+      <md-grid-tile *ngFor="let tile of tiles"
+          [colspan]="1"
+          [rowspan]="1"
+          [style.background]="white">
+        <md-card role="region" (click)="onSelect(tile)">
+          <img *ngIf="tile.used" md-card-image src="{{tile.imgSrc}}">    
+        </md-card>
+      </md-grid-tile>
+    </md-grid-list>
+  </div>
+  <md-toolbar *ngIf="gameOver">
+    <span>{{gameOverMsg}}</span>
+    <span class="msg-toolbar-spacer"></span>
+    <button md-fab mdTooltip="Play Again!" (click)="playAgain()"><md-icon>refresh</md-icon></button>
+  </md-toolbar>
+</div>
